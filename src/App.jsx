@@ -8,7 +8,7 @@ import { ImUserPlus } from "react-icons/im"
 import FormUpdateNotification from './component/FormUpdateNotification'
 import FormDeleteNotification from './component/FormDeleteNotification'
 
-const baseURL = 'https://144.126.218.162:9000/'
+const baseURL = 'https://144.126.218.162:9000'
 
 function App() {
 
@@ -21,7 +21,7 @@ function App() {
 
 
   const getAllUsers = () => {
-    const URL = `${baseURL}users/`
+    const URL = `${baseURL}/users/`
     axios.get(URL)
       .then(res => setUsers(res.data))
       .catch(err => console.log(err))
@@ -32,7 +32,7 @@ function App() {
   }, [])
 
   const createNewUser = data => {
-    const URL = `${baseURL}users/`
+    const URL = `${baseURL}/users/`
     axios.post(URL, data)
       .then(res => {
         console.log(res.data)
@@ -43,7 +43,7 @@ function App() {
   }
 
   const deleteUserById = id => {
-    const URL = `${baseURL}users/${id}/`
+    const URL = `${baseURL}/users/${id}/`
     axios.delete(URL)
       .then(res => { 
         console.log(res.data)
@@ -54,7 +54,7 @@ function App() {
   }
 
   const updateUserById = (id, data) => {
-    const URL = `${baseURL}users/${id}/`
+    const URL = `${baseURL}/users/${id}/`
     axios.patch(URL,data)
       .then(res => { 
         console.log(res.data)
