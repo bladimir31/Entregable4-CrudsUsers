@@ -21,7 +21,7 @@ function App() {
 
 
   const getAllUsers = () => {
-    const URL = `${baseURL}/users/`
+    const URL = `${baseURL}users/`
     axios.get(URL)
       .then(res => setUsers(res.data))
       .catch(err => console.log(err))
