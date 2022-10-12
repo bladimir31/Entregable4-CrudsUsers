@@ -43,7 +43,7 @@ function App() {
   }
 
   const deleteUserById = id => {
-    const URL = `${baseURL}/users/${id}/`
+    const URL = `${baseURL}users/${id}/`
     axios.delete(URL)
       .then(res => { 
         console.log(res.data)
@@ -54,7 +54,7 @@ function App() {
   }
 
   const updateUserById = (id, data) => {
-    const URL = `${baseURL}/users/${id}/`
+    const URL = `${baseURL}users/${id}/`
     axios.patch(URL,data)
       .then(res => { 
         console.log(res.data)
