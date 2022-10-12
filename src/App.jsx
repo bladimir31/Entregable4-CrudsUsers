@@ -8,7 +8,7 @@ import { ImUserPlus } from "react-icons/im"
 import FormUpdateNotification from './component/FormUpdateNotification'
 import FormDeleteNotification from './component/FormDeleteNotification'
 
-const baseURL = 'http://144.126.218.162:9000'
+const baseURL = 'http://144.126.218.162:9000/'
 
 function App() {
 
@@ -32,7 +32,7 @@ function App() {
   }, [])
 
   const createNewUser = data => {
-    const URL = `${baseURL}/users/`
+    const URL = `${baseURL}users/`
     axios.post(URL, data)
       .then(res => {
         console.log(res.data)
