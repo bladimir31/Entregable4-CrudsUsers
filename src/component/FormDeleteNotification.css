@@ -1,0 +1,93 @@
+.DtNotification{
+    top:0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Dtbackground{
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/fondo-borroso.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    opacity: 0.9;
+}
+
+.DtText{
+    width: 40vw;
+    max-width: 21rem;
+    min-width: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    position: absolute;
+    z-index: 1001;
+    background-color: white;
+    box-shadow: 0 0 1rem rgb(49, 49, 49);
+    border-radius: 1rem;
+    border-width: 2px;
+    border-style:ridge;
+    border-color: var(--ColorDelete);
+}
+
+
+.DtText:hover{
+    box-shadow: 0 0 1.5rem var(--ColorDelete);
+}
+
+.DtText-h3{
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.Dtbox_check{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.Dtcheck1{
+    color: var(--ColorDelete);
+    font-size: 2.5rem;
+}
+
+.Dtcheck2{
+    color: var(--ColorDelete);
+    font-size: 2.3rem;
+}
+
+.DtBtn-ok{
+    width: 4rem;
+    padding: 3px;
+    margin-top: 1rem;
+    font-weight: bold;
+    background-color: rgba(0, 197, 223, 0.582);
+    border-style:groove ;
+    border-radius: 5px;
+    border-color: var(--ColorDelete);
+    transition: all 0.2s;
+    color: var(--ColorDelete);
+}
+
+.DtBtn-ok:hover{
+    transform: scale(1.01);
+    box-shadow: 0 0 1.5rem var(--ColorDelete);
+    color: white ;
+    background-color: var(--ColorDelete);
+    border-color: white;
+}
+
+
+.DtNotification_Disable{
+    display: none;
+}
+   

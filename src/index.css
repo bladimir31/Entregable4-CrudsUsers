@@ -1,0 +1,38 @@
+:root{
+    --CardBackground: rgba(0, 153, 255, 0.753);
+    --CardBorder: rgba(232, 236, 240, 0.637);
+    --BtnColorBackground: rgb(255, 0, 0);
+    --BtnEditBackground: rgba(196, 196, 196, 0.507);
+    --BtnEditColor: rgb(197, 194, 194);
+    --ButtonColor: rgb(56, 2, 87);
+    --BackgroundForm:  rgb(217, 255, 247);
+    --Bg_nav: rgba(71, 156, 253, 0.466);
+    --ColorCheck: rgb(45, 161, 16);
+    --ColorUpdate: rgb(0, 68, 255);
+    --ColorDelete: rgb(255, 9, 9);
+    --BorderInput:  rgb(0, 132, 255);
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul,li{
+    list-style: none;
+    padding: 0;
+}
+
+span{
+    color: rgb(216, 210, 210);
+    font-size: 0.8em;
+}
+
+p{
+    font-size: 0.9em;
+}
+
+button{
+    border: none;
+}
+

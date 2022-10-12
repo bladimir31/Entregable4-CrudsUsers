@@ -1,0 +1,45 @@
+.App{
+    width: auto-fit(min-max 200px,1fr);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    min-height: 100vh;
+    padding: 1rem;
+    background-image: url(./img/fondo.jpg) ;
+    background-size: cover;
+    background-attachment:fixed;
+    background-position: center;  
+    position: relative;  
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin:0 auto 1rem auto;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: var(--Bg_nav);
+}
+
+.navbar button{
+    min-height: 1.5rem;
+    padding: 0 1rem 0 1rem;
+    color: white;
+    background-color: var(--ButtonColor);
+    margin-right: 1.5rem;
+}
+
+.navbar button:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 0.5rem rgb(0, 153, 255);
+}
+
+
+.Box_UserCard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}

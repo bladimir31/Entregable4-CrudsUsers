@@ -1,0 +1,91 @@
+.NotificationUp{
+    top:0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Up_background{
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/fondo-borroso.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    opacity: 0.9;
+}
+
+.UpText{
+    width: 40vw;
+    max-width: 21rem;
+    min-width: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    position: absolute;
+    z-index: 1001;
+    background-color: white;
+    box-shadow: 0 0 1rem rgb(49, 49, 49);
+    border-radius: 1rem;
+    border-width: 2px;
+    border-style:ridge;
+    border-color: var(--ColorUpdate);
+}
+
+
+.UpText:hover{
+    box-shadow: 0 0 1.5rem var(--ColorUpdate);
+}
+
+.UpText-h3{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.Upbox_update{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.update1{
+    color: var(--ColorUpdate);
+    font-size: 2.5rem;
+}
+
+.update2{
+    color: var(--ColorUpdate);
+    font-size: 2.3rem;
+}
+
+.BtnUp{
+    width: 4rem;
+    padding: 3px;
+    margin-top: 1rem;
+    font-weight: bold;
+    background-color: rgba(0, 197, 223, 0.582);
+    border-style:groove ;
+    border-color: var(--ColorUpdate);
+    transition: all 0.2s;
+    border-radius: 4px;
+    color: var(--ColorUpdate);
+}
+
+.BtnUp:hover{
+    transform: scale(1.01);
+    box-shadow: 0 0 1.5rem var(--ColorUpdate);
+    color: white ;
+    background-color: var(--ColorUpdate);
+    border-color: var(--ColorUpdate)
+}
+.NotificationUp_Disable{
+    display: none;
+}
+   

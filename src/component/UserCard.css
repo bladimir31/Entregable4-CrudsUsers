@@ -1,0 +1,70 @@
+.UserCard {
+    width: 35vw;
+    max-width: 16rem;
+    min-width: 12rem;
+    padding: 1rem;
+    background-color: var(--CardBackground);
+    border-style:ridge;
+    border-width: 2px;
+    border-radius: 0.5rem;
+    border-color: var(--CardBorder);
+}
+
+.UserCard:hover{
+    box-shadow: 0 0 1rem aqua;
+}
+
+.Name {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.line{
+    border-style: none;
+    background-color: var(--CardBorder);
+    height: 2px;
+    border-radius: 30%;
+    margin-bottom: 1rem;
+}
+
+.Info{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.Info_item{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+}
+
+.Buttons {
+    font-size: 1.5rem;
+    text-align: end;
+}
+
+.btn_trash{
+    padding: 4px;
+    color: white;
+    background-color: var(--BtnColorBackground);
+    border-radius: 4px;
+    margin-right: 0.5rem;
+}
+
+.btn_edit{
+    padding: 2px;
+    background-color: var(--BtnEditBackground);
+    border-style:ridge;
+    border-width: 2px;
+    border-color: var(--CardBorder);
+    border-radius: 4px;
+    color: var(--BtnEditColor);
+    z-index: 1;
+}
+
+.btn_trash:hover,
+.btn_edit:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgb(122, 188, 250);
+}
