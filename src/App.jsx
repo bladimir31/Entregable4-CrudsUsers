@@ -8,7 +8,7 @@ import { ImUserPlus } from "react-icons/im"
 import FormUpdateNotification from './component/FormUpdateNotification'
 import FormDeleteNotification from './component/FormDeleteNotification'
 
-const baseURL = 'http://144.126.218.162:9000/'
+const baseURL = 'https://144.126.218.162:9000/'
 
 function App() {
 
